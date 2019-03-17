@@ -1,0 +1,20 @@
+html {
+    font-style: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    color: 666666;
+}
+
+body {
+    background-color: e4e4e4;
+    padding: 20px;
+    margin: 50px;
+}
+
+.floating-div {
+    margin: 20px 50px 20px 50px;
+    padding: 30px;
+    height: 500px;
+    border-radius: 16pt;
+    box-shadow: 5px 5px 10px #aaaaaa;
+    background-color: fff;
+}
