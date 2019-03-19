@@ -1,0 +1,40 @@
+/* Define color variables */
+:root {
+    --spanish-roast: #0d172e; /* Background */
+    --american-silver: #ced1ce; /* Color    ,   Border */
+    --vinca: #5576a7; /* parent background */
+
+    --bosco-blue: #76a0ae; /* button hover color */
+}
+
+.col-spanish-roast {
+    color: var(--spanish-roast);
+}
+
+.col-american-silver {
+    color: var(--american-silver);
+}
+
+.col-vinca {
+    color: var(--vinca);
+}
+
+.col-bosco-blue {
+    color: var(--bosco-blue);
+}
+
+.bg-col-spanish-roast {
+    color: var(--spanish-roast);
+}
+
+.bg-col-american-silver {
+    color: var(--american-silver);
+}
+
+.bg-col-vinca {
+    color: var(--vinca);
+}
+
+.bg-col-bosco-blue {
+    color: var(--bosco-blue);
+}

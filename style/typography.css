@@ -1,0 +1,120 @@
+/* Define color variables */
+
+:root {
+    --spanish-roast: #0d172e;
+    /* Background */
+    --american-silver: #ced1ce;
+    /* Color    ,   Border */
+    --vinca: #5576a7;
+    /* parent background */
+    --bosco-blue: #76a0ae;
+    /* button hover color */
+}
+
+.heading {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32pt;
+}
+
+.font-roboto {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.font-32 {
+    font-size: 32pt;
+}
+
+.font-28 {
+    font-size: 28pt;
+}
+
+.font-24 {
+    font-size: 24pt;
+}
+
+.font-20 {
+    font-size: 20pt;
+}
+
+.font-16 {
+    font-size: 16pt;
+}
+
+.font-12 {
+    font-size: 12pt;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.normal {
+    font-style: normal;
+}
+
+.no-decoration {
+    text-decoration: none;
+}
+
+.absolute-pos {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 25px;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-justify {
+    text-align: justify; 
+}
+
+.line-spacing-1 {
+    line-height: 1;
+}
+
+.line-spacing-1-5 {
+    line-height: 1.5;
+}
+
+.line-spacing-2 {
+    line-height: 2;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+hr {
+    border: 1;
+    width: 96%;
+    color: #FFFF00;
+    height: 1px;
+}
+
+
+.line {
+    float: left;
+    width: 100%;
+    height: 0px;
+}

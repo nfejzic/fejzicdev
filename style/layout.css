@@ -1,0 +1,216 @@
+/* Define color variables */
+
+:root {
+    --spanish-roast: #0d172e;
+    /* Background */
+    --american-silver: #ced1ce;
+    /* Color    ,   Border */
+    --vinca: #5576a7;
+    /* parent background */
+    --bosco-blue: #76a0ae;
+    /* button hover color */
+}
+
+html {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    color: #666666;
+}
+
+body {
+    background-color: var(--spanish-roast);
+}
+
+#body-grid {
+    position: relative;
+    display: grid;
+    grid-gap: 10px;
+    justify-content: center;
+    grid-template-areas: 'nav' 'header' 'main' 'contact' 'footer';
+}
+
+#nav {
+    display: grid;
+    /* border: 5px solid black; */
+    box-sizing: border-box;
+    margin: auto auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 75vw;
+    height: 100px;
+    grid-area: nav;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+    /* background-color: #ff00ff22; */
+}
+
+#nav-logo {
+    width: 200px;
+    height: 75px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    /* background-color: #ffffff33; */
+}
+
+#nav-logo a {
+    text-decoration: none;
+    color: var(--vinca);
+}
+
+#nav-logo span {
+    color: var(--american-silver);
+}
+
+#nav-items-grid {
+    height: 75px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /* background-color: #00ff0055; */
+    align-content: center;
+    justify-items: center;
+}
+
+.nav-item {
+    color: var(--american-silver);
+}
+
+.nav-item a {
+    color: var(--american-silver);
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    color: var(--vinca);
+}
+
+#nav-kontakt {
+    height: 70px;
+    display: grid;
+    align-content: center;
+    justify-content: right;
+    color: var(--american-silver);
+}
+
+#nav-kontakt a {
+    text-decoration: none;
+    color: var(--american-silver);
+    padding: 0.25em 0.75em 0.25em 0.75em;
+    border-radius: 0.25em;
+    background-color: var(--vinca);
+}
+
+#nav-kontakt a:hover {
+    background-color: var(--bosco-blue);
+}
+
+#header-main {
+    height: 100vh;
+    width: 75vw;
+    grid-area: header;
+    /* background-image: url("src/bg.jpg"); */
+    background-image: linear-gradient(var(--spanish-roast) 5%, #0d172ea0 40%, var(--spanish-roast) 95%), url("../src/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 60%;
+    /* background-color: #ff000055; */
+}
+
+#header {
+    width: 75vw;
+    grid-area: header;
+}
+
+#footer {
+    height: 100px;
+    grid-area: footer;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    color: var(--american-silver);
+    /* background-color: #aaa; */
+}
+
+#footer p {
+    text-align: center;
+}
+
+#contact-area {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-gap: 25px;
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    box-sizing: border-box;
+    padding: 25px;
+    justify-content: center;
+    height: auto;
+    width: 75vw;
+    grid-area: contact;
+    background-color: var(--vinca);
+}
+
+.contact-header {
+    display: grid;
+    height: 100px;
+    grid-column: 2 / span 2;
+    grid-row: 1 / 1;
+    background-color: var(--spanish-roast);
+}
+
+.contact-card {
+    display: grid;
+    grid-gap: 25px;
+    height: auto;
+
+    grid-column: span 2;
+    grid-row: 2/2;
+
+    grid-template-rows: 1fr 3fr;
+    box-sizing: border-box;
+    padding: 1em;
+    background-color: var(--spanish-roast);
+}
+
+.contact-card-item {
+    display: flexbox;
+    min-width: 100%;
+    height: auto;
+    align-content: center;
+    /* border: 1px solid red; */
+}
+
+#main-area {
+    height: auto;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: var(--vinca);
+    display: grid;
+    grid-area: main;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.main-area-item {
+    color: var(--american-silver);
+    width: 1fr;
+    box-sizing: border-box;
+    padding-top: 56.25%;
+    position: relative;
+    background-color: var(--spanish-roast);
+    overflow: hidden;
+}
+
+.text {
+    font-size: 16pt;
+    line-height: 1.5;
+    position: absolute;
+    text-align: justify;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    top: 0;
+}
