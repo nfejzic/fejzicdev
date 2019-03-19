@@ -1,0 +1,122 @@
+/* Define color variables */
+:root {
+    --spanish-roast: #0d172e; /* Background */
+    --american-silver: #ced1ce; /* Color    ,   Border */
+    --vinca: #5576a7; /* parent background */
+}
+
+html {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    color: #666666;
+}
+
+body {
+    background-image: url("src/bg.jpg");
+    background-size: 75vw auto;
+    background-repeat: no-repeat;
+    background-color: var(--spanish-roast);
+    background-position: center 60%;
+}
+
+#body-grid {
+    position: relative;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    'nav'
+    'header'
+    'main'
+    'footer';
+}
+
+#nav {
+    display: grid;
+    /* border: 5px solid black; */
+    box-sizing: border-box;
+    margin: auto auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 75vw;
+    height: 100px;
+    grid-area: nav;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+    /* background-color: #ff00ff22; */
+}
+
+#nav-logo {
+    width: 200px;
+    height: 75px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    /* background-color: #ffffff33; */
+}
+
+#nav-logo p {
+    color: var(--vinca);
+}
+
+#nav-logo span {
+    color: var(--american-silver);
+}
+
+#nav-items-grid {
+    height: 75px; 
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /* background-color: #00ff0055; */
+
+    align-content: center;
+    justify-items: center;
+}
+
+.nav-item {
+    color: var(--american-silver);
+}
+
+#nav-kontakt {
+    height: 75px;
+    display: grid;
+    align-content: center;
+    justify-content: right;
+    
+    color: var(--american-silver);
+}
+
+#nav-kontakt p {
+    padding: 15px 20px 15px 20px;
+    border-radius: 0.25em;
+    background-color: var(--vinca);
+}
+
+#header {
+    height: 100vh;
+    grid-area: header;
+    /* background-color: #ff000055; */
+}
+
+#footer {
+    height: 100px;
+    grid-area: footer;
+    /* background-color: #aaa; */
+}
+
+#main-area {
+    height: auto;
+    /* background-color: #aaaaaa; */
+
+    display: grid;
+    grid-area: main;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.main-area-item {
+    
+    width: 33vw;
+    height: auto;
+}

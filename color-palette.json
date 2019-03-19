@@ -1,0 +1,43 @@
+[
+  {
+    "tag" : "Background",
+    "name": "Spanish Roast",
+    "hex": "#0d172e"
+  },
+  {
+    "name": "American Silver",
+    "hex": "#ced1ce"
+  },
+  {
+    "name": "Stream",
+    "hex": "#4c5e7a"
+  },
+  {
+    "name": "Bosco Blue",
+    "hex": "#76a0ae"
+  },
+  {
+    "name": "Waza Bear",
+    "hex": "#5f5a57"
+  },
+  {
+    "name": "Catawba Grape",
+    "hex": "#5b4043"
+  },
+  {
+    "name": "Sappanwood Incense",
+    "hex": "#a0504d"
+  },
+  {
+    "name": "Vinca",
+    "hex": "#5576a7"
+  },
+  {
+    "name": "Blue Depths",
+    "hex": "#253057"
+  },
+  {
+    "name": "School Ink",
+    "hex": "#31383f"
+  }
+]
