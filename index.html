@@ -1,70 +1,108 @@
 <html>
-  <head>
-    <title>fejzic dev</title>
+	<head>
+		<title>fejzic dev</title>
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style/layout.css" />
-    <link rel="stylesheet" href="style/typography.css">
-    <link rel="stylesheet" href="style/color.css">
-  </head>
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <body id="body-grid">
-    <div id="header-main">
-      <div id="nav">
-        <div id="nav-logo">
-          <a href="index.html">fejzic<span>dev</span></a>
-        </div>
-        <div id="nav-items-grid">
-          <div></div>
-          <div class="nav-item"><a href="index.html">home</a></div>
-          <div></div>
-          <div class="nav-item"><a href="portfolio.html">portfolio</a></div>
-        </div>
-        <div id="nav-kontakt"><a href="contact.html">contact</a></div>
-      </div>
-    </div>
-    <div id="main-area">
-      <div class="main-area-item">
-        <p class="text">Ovo je test! U ovim pravougaonicima, 
-          ili ti ga placeholderima, ce da bude pregled projekata.
-          Najnoviji projekti sa stranice portfolio ce da budu prikazani u ovim pravougaonicima.
-          Zamisao je da se ubaci automatski update, tako da se najnoviji projekti automatski prikazuju.
-        </p>
-      </div>
-      <div class="main-area-item">
-        <p class="text">Ovo je test! U ovim pravougaonicima, 
-          ili ti ga placeholderima, ce da bude pregled projekata.
-          Najnoviji projekti sa stranice portfolio ce da budu prikazani u ovim pravougaonicima.
-          Zamisao je da se ubaci automatski update, tako da se najnoviji projekti automatski prikazuju.
-        </p>
-      </div>
-      <div class="main-area-item">
-        <p class="text">Ovo je test! U ovim pravougaonicima, 
-          ili ti ga placeholderima, ce da bude pregled projekata.
-          Najnoviji projekti sa stranice portfolio ce da budu prikazani u ovim pravougaonicima.
-          Zamisao je da se ubaci automatski update, tako da se najnoviji projekti automatski prikazuju.
-        </p>
-      </div>
-      <div class="main-area-item">
-        <p class="text">Ovo je test! U ovim pravougaonicima, 
-          ili ti ga placeholderima, ce da bude pregled projekata.
-          Najnoviji projekti sa stranice portfolio ce da budu prikazani u ovim pravougaonicima.
-          Zamisao je da se ubaci automatski update, tako da se najnoviji projekti automatski prikazuju.
-        </p>
-      </div>
-      <div class="main-area-item">
-        <p class="text">Ovo je test! U ovim pravougaonicima, 
-          ili ti ga placeholderima, ce da bude pregled projekata.
-          Najnoviji projekti sa stranice portfolio ce da budu prikazani u ovim pravougaonicima.
-          Zamisao je da se ubaci automatski update, tako da se najnoviji projekti automatski prikazuju.
-        </p>
-      </div>
-    </div>
-    <div id="footer">
-      <p>&copy; 2019 Fejzić Nadir</p>
-    </div>
-  </body>
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style/new_style.css" />
+		<link rel="stylesheet" href="style/typography.css" />
+		<link rel="stylesheet" href="style/color.css" />
+	</head>
+
+	<body>
+		<input type="checkbox" id="nav-toggle" />
+
+		<label for="nav-toggle" class="mobilenav-toggle bg-col-medium-purple">
+			<span></span>
+			<span></span>
+			<span></span>
+		</label>
+		<div class="mobilenav-backdrop">
+			<header>
+				<a href="/index.html">
+					<div class="header-image bg-col-tiffany-blue"></div
+				></a>
+			</header>
+			<div class="wrapper">
+				<div class="title">
+					<!-- <hr /> -->
+					<h1
+						class="font-roboto font-32 text-align-center col-charlestone-green"
+					>
+						TITLE!
+					</h1>
+					<p class="font-roboto font-14 text-align-center">
+						Welcome to my page! This is like a placeholder, just to see how does
+						it look like!
+					</p>
+					<!-- <hr /> -->
+				</div>
+				<div class="card">
+					<a href="/src/640x360.png">
+						<img class="head" src="/src/640x360.png" />
+					</a>
+					<div class="body">
+						<h1
+							class="font-roboto font-20 text-align-left col-charlestone-green"
+						>
+							Card Title!
+						</h1>
+						<p class="date light">27 Mar 2019</p>
+						<p class="font-roboto font-14 text-align-left">
+							This is some text inside of a card. This text will propably be
+							populated with some meaningful text about the project displayed in
+							thumbnail above!
+						</p>
+					</div>
+					<div class="footer">
+						<a
+							href="src/640x360.png"
+							class="font-roboto font-16 text-align-center bold col-white-smoke bg-col-medium-purple"
+							>Take me to it!</a
+						>
+					</div>
+				</div>
+				<div class="card">
+					<a href="/src/640x360.png">
+						<img class="head" src="/src/640x360.png" />
+					</a>
+					<div class="body">
+						<h1
+							class="font-roboto font-20 text-align-left col-charlestone-green"
+						>
+							Card Title!
+						</h1>
+						<p class="date light">27 Mar 2019</p>
+						<p class="font-roboto font-14 text-align-left">
+							This is some text inside of a card. This text will propably be
+							populated with some meaningful text about the project displayed in
+							thumbnail above!
+						</p>
+					</div>
+					<div class="footer">
+						<a
+							href="src/640x360.png"
+							class="font-roboto font-16 text-align-center bold col-white-smoke bg-col-medium-purple"
+							>Take me to it!</a
+						>
+					</div>
+				</div>
+				<a
+					href="/index.html"
+					class="more no-decoration font-16 bold col-white-smoke text-align-center bg-col-positive"
+					>MORE</a
+				>
+			</div>
+			<div
+				class="footer font-roboto font-14 bold text-align-center col-white-smoke bg-col-charlestone-green"
+			>
+				<p>Nadir Fejzic &copy; 2019</p>
+			</div>
+		</div>
+		<script src="script/script.js"></script>
+	</body>
 </html>

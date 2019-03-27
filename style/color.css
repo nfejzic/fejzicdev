@@ -1,40 +1,212 @@
 /* Define color variables */
-:root {
-    --spanish-roast: #0d172e; /* Background */
-    --american-silver: #ced1ce; /* Color    ,   Border */
-    --vinca: #5576a7; /* parent background */
 
-    --bosco-blue: #76a0ae; /* button hover color */
+:root {
+	--spanish-roast: #0d172e;
+	/* Background */
+	--american-silver: #ced1ce;
+	/* Color    ,   Border */
+	--vinca: #5576a7;
+	/* parent background */
+	--bosco-blue: #76a0ae;
+	/* button hover color */
+	--green: #cbf3b5;
+	--blue: #bfd0f6;
+	--pink: #fce4ec;
+	/* New Color Palette - pastel like */
+	--brink-pink: #fb7287;
+	--chiffon: #e6fdbd;
+	--sinbad: #99d8cf;
+	--cold-purple: #b6a1de;
+	/* Even newer color scheme... Default one? */
+	/* primary */
+	--medium-purple: #9381FF;
+	--primary-col: #9381FF;
+	/* positive */
+	--tiffany-blue: #17BEBB;
+	--positive-col: #17BEBB;
+	/* negative */
+	--red-orange: #FF5154;
+	--negative-col: #FF5154;
+	/* white color */
+	--white-smoke: #FBF5F3;
+	--white-col: #FBF5F3;
+	/* charlestone-green black color */
+	--charlestone-green: #2E282A;
+	--black-col: #2E282A;
+	--charlestone-green-light: #D9D7D8;
+	--black-col-light: #D9D7D8;
+}
+
+.col-medium-purple {
+	color: var(--medium-purple);
+}
+
+.col-primary {
+	color: var(--medium-purple);
+}
+
+.col-tiffany-blue {
+	color: var(--tiffany-blue);
+}
+
+.col-positive {
+	color: var(--tiffany-blue);
+}
+
+.col-red-orange {
+	color: var(--red-orange);
+}
+
+.col-negative {
+	color: var(--red-orange);
+}
+
+.col-white-smoke {
+	color: var(--white-smoke);
+}
+
+.col-charlestone-green {
+	color: var(--charlestone-green);
+}
+
+.col-charlestone-green-light {
+	color: var(--charlestone-green-light);
+}
+
+.col-brink-pink {
+	color: var(--brink-pink);
+}
+
+.col-chiffon {
+	color: var(--chiffon);
+}
+
+.col-sinbad {
+	color: var(--sinbad);
+}
+
+.col-cold-purple {
+	color: var(--cold-purple);
+}
+
+.col-white {
+	color: white;
+}
+
+.col-black {
+	color: black;
+}
+
+.col-grey {
+	color: #444;
 }
 
 .col-spanish-roast {
-    color: var(--spanish-roast);
+	color: var(--spanish-roast);
 }
 
 .col-american-silver {
-    color: var(--american-silver);
+	color: var(--american-silver);
 }
 
 .col-vinca {
-    color: var(--vinca);
+	color: var(--vinca);
 }
 
 .col-bosco-blue {
-    color: var(--bosco-blue);
+	color: var(--bosco-blue);
 }
 
+/* DEFAULT THEME */
+
+/* primary color */
+
+.bg-col-medium-purple {
+	background-color: var(--medium-purple);
+}
+
+.bg-col-primary {
+	background-color: var(--medium-purple);
+}
+
+/* positive color */
+
+.bg-col-tiffany-blue {
+	background-color: var(--tiffany-blue);
+}
+
+.bg-col-positive {
+	background-color: var(--tiffany-blue);
+}
+
+/* negative color */
+
+.bg-col-red-orange {
+	background-color: var(--red-orange);
+}
+
+.bg-col-negative {
+	background-color: var(--red-orange);
+}
+
+/* white color of theme */
+
+.bg-col-white-smoke {
+	background-color: var(--white-smoke);
+}
+
+/* black color of theme */
+
+.bg-col-charlestone-green {
+	background-color: var(--charlestone-green);
+}
+
+.bg-col-charlestone-green-light {
+	background-color: var(--charlestone-green-light);
+}
+
+/* other theme */
+
 .bg-col-spanish-roast {
-    color: var(--spanish-roast);
+	background-color: var(--spanish-roast);
 }
 
 .bg-col-american-silver {
-    color: var(--american-silver);
+	background-color: var(--american-silver);
 }
 
 .bg-col-vinca {
-    color: var(--vinca);
+	background-color: var(--vinca);
 }
 
 .bg-col-bosco-blue {
-    color: var(--bosco-blue);
+	background-color: var(--bosco-blue);
+}
+
+.col-bg-brink-pink {
+	background-color: var(--brink-pink);
+}
+
+.col-bg-chiffon {
+	background-color: var(--chiffon);
+}
+
+.col-bg-sinbad {
+	background-color: var(--sinbad);
+}
+
+.col-bg-cold-purple {
+	background-color: var(--cold-purple);
+}
+
+.col-bg-white {
+	background-color: white;
+}
+
+.col-bg-black {
+	background-color: black;
+}
+
+.col-bg-grey {
+	background-color: #444;
 }
