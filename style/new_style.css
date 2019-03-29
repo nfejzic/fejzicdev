@@ -31,6 +31,8 @@
 	--black-col: #2E282A;
 	--charlestone-green-light: #D9D7D8;
 	--black-col-light: #D9D7D8;
+	/* Some CSS styling variables! */
+	--border-radius: 5px;
 }
 
 html, body {
@@ -56,8 +58,18 @@ html, body {
 	margin: 0;
 }
 
+input {}
+
+#nav-toggle {
+	/* display: flexbox; */
+}
+
+.navigation {}
+
 .mobilenav-toggle {
 	display: none;
+	/* position: relative; */
+	/* display: flex; */
 }
 
 .mobilenav-backdrop {
@@ -181,5 +193,67 @@ html, body {
 		display: inline-block;
 		background: #fff;
 		border-radius: 0.075em;
+	}
+	#nav-toggle:checked~.navigation {
+		background-color: rgba(255, 255, 255, 0.5);
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+		top: 0;
+		left: 0px;
+		bottom: 0;
+		right: 0;
+		padding-top: 2rem;
+		z-index: 9000;
+	}
+	.navigation nav {
+		/* background-color: black; */
+		position: fixed;
+		top: 10rem;
+		left: 0;
+		right: 0;
+		height: auto;
+	}
+	.navigation .links {
+		/* border: 3px solid var(--red-orange); */
+		padding: 0rem 2rem;
+		overflow: hidden;
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		/* text-decoration: none; */
+		/* justify-content: center; */
+	}
+	.navigation .links a {
+		/* visibility: hidden; */
+		text-decoration: none;
+		vertical-align: top;
+		display: block;
+		/* line-height: normal; */
+		transition-property: all;
+		transition-duration: 150ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		opacity: 0;
+		border-radius: var(--border-radius);
+		width: fit-content;
+		padding: 1.2rem 2rem 1rem 2rem;
+		margin: 0.5em -2rem;
+	}
+	.navigation .links a:nth-child(1) {
+		transition-delay: 0ms;
+	}
+	.navigation .links a:nth-child(2) {
+		transition-delay: 75ms;
+	}
+	.navigation .links a:nth-child(3) {
+		transition-delay: 150ms;
+	}
+	#nav-toggle:checked~.navigation .links a {
+		/* visibility: visible; */
+		opacity: 1;
+		border-radius: var(--border-radius);
+		/* width: fit-content; */
+		/* padding: 1rem 2rem 1rem 2rem; */
+		margin: 0.5em 0em;
 	}
 }
