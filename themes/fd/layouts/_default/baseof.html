@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	{{ partial "head.html" . }}
+</head>
+
+<body>
+	{{ block "header" . }}
+	{{ partial "header" . }}
+	{{ end }}
+	{{ block "main" . }}
+	<div class="mobile-backdrop">
+		<div class="heading"></div>
+		<div class="wrapper">
+			<div class="main-title">
+				<h1 class="font-bold font-24 col-black text-align-center">
+					Welcome to my page!
+				</h1>
+				<p class="col-black font-light text-align-center">
+					Purpose of this page is to showcase my web-dev skills, and also to
+					host my small little Javascript sketches. They will be made using
+					primarily p5.js library. Content of this page, and the page itself is
+					heavily inspired by TheCodingTrain channel, owned by Daniel Shiffman!
+				</p>
+			</div>
+			<div class="card">
+				<img src="/src/640x360.png" />
+				<h1 class="title font-20 font-bold">Card Title!</h1>
+				<p class="font-light">
+					This text would be replaced by the text from the corresponding project
+					page! The idea is that the Hugo lists last few projects in these cards
+					on it's own!
+				</p>
+				<a href="" class="font-no-decoration col-white bg-col-primary text-align-center">Take me there!</a>
+			</div>
+		</div>
+
+		{{ end }}
+
+		{{ block "footer" . }}
+		{{ partial "footer.html" . }}
+		{{ end }}
+	</div>
+</body>
+
+</html>

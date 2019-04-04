@@ -1,0 +1,78 @@
+/* Even newer color scheme... Default one? */
+/* primary */
+$medium-purple: #9381ff;
+$primary-col: #9381ff;
+/* positive */
+$tiffany-blue: #17bebb;
+$positive-col: #17bebb;
+/* negative */
+$red-orange: #ff5154;
+$negative-col: #ff5154;
+/* white color */
+$white-smoke: #fbf5f3;
+$white-col: #fbf5f3;
+/* charlestone-green black color */
+$charlestone-green: #2e282a;
+$black-col: #2e282a;
+$charlestone-green-light: #d9d7d8;
+$black-col-light: #d9d7d8;
+
+.col-medium-purple,
+.col-primary {
+	color: $medium-purple;
+}
+
+.col-tiffany-blue,
+.col-positive {
+	color: $tiffany-blue;
+}
+
+.col-red,
+.col-negative {
+	color: $red-orange;
+}
+
+.col-white,
+.col-white-smoke {
+	color: $white-smoke;
+}
+
+.col-black,
+.col-charlestone-green {
+	color: $charlestone-green;
+}
+
+.col-black-lighter,
+.col-charlestone-green-lighter {
+	color: $charlestone-green-light;
+}
+
+.bg-col-medium-purple,
+.bg-col-primary {
+	background-color: $medium-purple;
+}
+
+.bg-col-tiffany-blue,
+.bg-col-positive {
+	background-color: $tiffany-blue;
+}
+
+.bg-col-red,
+.bg-col-negative {
+	background-color: $red-orange;
+}
+
+.bg-col-white,
+.bg-col-white-smoke {
+	background-color: $white-smoke;
+}
+
+.bg-col-black,
+.bg-col-charlestone-green {
+	background-color: $charlestone-green;
+}
+
+.bg-col-black-lighter,
+.bg-col-charlestone-green-lighter {
+	background-color: $charlestone-green-light;
+}
