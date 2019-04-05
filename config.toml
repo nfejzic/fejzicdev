@@ -1,4 +1,4 @@
-baseURL = "http://fejzic.dev/"
+baseURL = "https://fejzic.dev/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "fd"

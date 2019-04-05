@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My New Hugo Site</title>
-    <link>http://fejzic.dev/</link>
+    <link>https://fejzic.dev/</link>
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 05 Apr 2019 12:54:28 +0200</lastBuildDate>
     
-	<atom:link href="http://fejzic.dev/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://fejzic.dev/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>First Project</title>
-      <link>http://fejzic.dev/projects/first-project/</link>
+      <link>https://fejzic.dev/projects/first-project/</link>
       <pubDate>Fri, 05 Apr 2019 12:54:28 +0200</pubDate>
       
-      <guid>http://fejzic.dev/projects/first-project/</guid>
+      <guid>https://fejzic.dev/projects/first-project/</guid>
       <description>&lt;h1 id=&#34;first-project&#34;&gt;First Project!&lt;/h1&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://fejzic.dev/src/640x360.png&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://fejzic.dev/src/640x360.png&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;So, this is another one of those testing things&amp;hellip; Let me see how does it work with just a small amount of text.&lt;/p&gt;
 
@@ -28,10 +28,10 @@
     
     <item>
       <title>First Page</title>
-      <link>http://fejzic.dev/projects/first-page/</link>
+      <link>https://fejzic.dev/projects/first-page/</link>
       <pubDate>Fri, 05 Apr 2019 11:29:16 +0200</pubDate>
       
-      <guid>http://fejzic.dev/projects/first-page/</guid>
+      <guid>https://fejzic.dev/projects/first-page/</guid>
       <description>&lt;h1 id=&#34;this-is-the-first-page&#34;&gt;This is the First Page!&lt;/h1&gt;
 
 &lt;p&gt;I am trying really hard to get this theme or template, call it whatever you want, to work! The plan is to make this text appear in a card on homepage, and also the image! I am going to try to put the image before and after text, and test what does the content variable take&amp;hellip; Also plan is to truncate this text, so that the card stays the same height always!&lt;/p&gt;
