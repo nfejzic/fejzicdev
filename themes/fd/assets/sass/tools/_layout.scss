@@ -1,11 +1,23 @@
 .wrapper {
 }
 
+.post-wrapper {
+}
+
+.cards-wrapper {
+	margin: 0rem;
+	padding: 0rem;
+}
+
 .card {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	margin: 2rem 0rem;
+	margin: 1rem 0rem;
+	padding: 0rem;
+	height: 35rem;
+	max-width: 640px;
+	overflow: hidden;
 
 	border-radius: $def-border-radius;
 	box-shadow: 0px 5px 15px $black-col-light;
@@ -18,23 +30,56 @@
 		width: 100%;
 	}
 
-	.title {
-		// border: 1px solid red;
-		margin: 1rem 0rem 0rem 1rem;
-	}
+	.text-wrap {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		margin: 0rem;
+		padding: 0rem 1rem;
 
-	p {
-		margin: 1rem;
-	}
+		h1 {
+			// border: 1px solid red;
+			margin-top: 1rem;
+			margin-bottom: 0rem;
+			font-size: 20pt;
+			font-weight: bold;
 
-	a {
-		width: 80%;
-		height: auto;
-		padding: 1rem;
-		margin-top: 1rem;
-		margin-bottom: 2rem;
-		border-radius: $def-border-radius;
-		align-self: center;
+			a {
+				all: unset;
+			}
+		}
+
+		.date {
+			font-size: 12pt;
+			height: auto !important;
+			margin: 0rem 0rem;
+			color: $sonic-silver;
+		}
+
+		p {
+			// border: 1px solid red;
+			height: 9rem;
+			margin: 1rem 0rem;
+			color: $black-col-lighter;
+		}
+
+		.link {
+			// width: 90%;
+			position: relative;
+			bottom: 0;
+			width: 100%;
+			height: auto;
+			padding: 1rem;
+			margin-top: auto;
+			margin-bottom: 2rem;
+			border-radius: $def-border-radius;
+			align-self: flex-end;
+			box-shadow: 0px 5px 0px $black-col-light;
+			&:hover {
+				box-shadow: none;
+				transform: translateY(5px);
+			}
+		}
 	}
 }
 
@@ -48,6 +93,57 @@
 
 		h1 {
 			margin: 1rem 0rem;
+		}
+
+		.cards-wrapper {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: space-around;
+		}
+	}
+
+	.post-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-between;
+		padding: 1rem 1rem;
+
+		h1 {
+			margin: 1rem 0rem;
+		}
+
+		img {
+			width: 100%;
+			border-radius: $def-border-radius;
+		}
+
+		.links {
+			// border: 1px solid red;
+			display: flex;
+			width: auto;
+			align-self: center;
+			// justify-content: space-around;
+			margin: 1rem;
+
+			a {
+				// all: unset;
+				// border: 1px solid blue;
+				// width: 90%;
+				box-shadow: 0px 5px 0px $black-col-light;
+				width: auto;
+				height: auto;
+				padding: 1rem;
+				margin: 1rem 0.5rem;
+				border-radius: $def-border-radius;
+				align-self: center;
+
+				&:hover {
+					box-shadow: none;
+					transform: translateY(5px);
+				}
+			}
 		}
 	}
 }

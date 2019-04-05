@@ -9,7 +9,7 @@
 	// opacity: 0.5;
 	transition-duration: 300ms;
 	transition-timing-function: $transition-timing;
-	transition-property: filter;
+	transition-property: all;
 }
 
 #nav-toggle {
@@ -59,10 +59,9 @@
 		background-color: $tiffany-blue;
 	}
 
-	$margin-left: -1rem;
-
-	#nav-toggle:checked {
-		$margin-left: 1rem;
+	#nav-toggle:checked ~ .mobile-backdrop {
+		background-color: white;
+		opacity: 0.5;
 	}
 
 	nav {
@@ -98,7 +97,7 @@
 			}
 		}
 
-		@for $i from 1 to 3 {
+		@for $i from 1 to 4 {
 			.nav-link:nth-child(#{$i}) {
 				$top-offs: $i * 4rem;
 				top: $top-offs;

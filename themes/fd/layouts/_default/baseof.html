@@ -1,47 +1,77 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		{{ partial "head.html" . }}
+	</head>
 
-<head>
-	{{ partial "head.html" . }}
-</head>
+	<body>
+		{{ block "header" . }}
+		{{ partial "header" . }}
+		{{ end }}
+		{{ block "main" . }}
+		<div class="mobile-backdrop">
+			<div class="heading"></div>
+			{{ block "content" . }}
+			<div class="wrapper">
+				<div class="main-title">
+					<h1 class="font-bold font-24 col-black text-align-center">
+						Welcome to my page!
+					</h1>
+					<p class="col-black font-light text-align-center">
+						Purpose of this page is to showcase my web-dev skills, and also to
+						host my small little Javascript sketches. They will be made using
+						primarily p5.js library. Content of this page, and the page itself
+						is heavily inspired by TheCodingTrain channel, owned by Daniel
+						Shiffman!
+					</p>
+				</div>
 
-<body>
-	{{ block "header" . }}
-	{{ partial "header" . }}
-	{{ end }}
-	{{ block "main" . }}
-	<div class="mobile-backdrop">
-		<div class="heading"></div>
-		<div class="wrapper">
-			<div class="main-title">
-				<h1 class="font-bold font-24 col-black text-align-center">
-					Welcome to my page!
-				</h1>
-				<p class="col-black font-light text-align-center">
-					Purpose of this page is to showcase my web-dev skills, and also to
-					host my small little Javascript sketches. They will be made using
-					primarily p5.js library. Content of this page, and the page itself is
-					heavily inspired by TheCodingTrain channel, owned by Daniel Shiffman!
-				</p>
+				{{ range (first 5 .Pages.ByPublishDate.Reverse) }}
+				<div class="cards-wrapper">
+					<div class="card">
+						<img src="{{.Params.img}}" />
+						{{/*
+						<h1 class="title font-20 font-bold">{{.Title}}</h1>
+						*/}}
+						<div class="text-wrap">
+							<h1>
+								<a href="{{.RelPermalink}}">{{.Params.postHeading}}</a>
+							</h1>
+							<p class="date">{{.Date.Format "Monday 01 Jan 2006"}}</p>
+							<p>{{truncate 225 .Params.postSummary}}</p>
+							<a
+								href="{{.RelPermalink}}"
+								class="link font-no-decoration font-bold font-16 col-white bg-col-primary text-align-center"
+								>To the project!</a
+							>
+						</div>
+					</div>
+				</div>
+				{{ end }}
+
+				{{/*
+				<div class="card">
+					<img src="/src/640x360.png" />
+					<h1 class="title font-20 font-bold">Card Title!</h1>
+					<p class="font-light">
+						This text would be replaced by the text from the corresponding
+						project page! The idea is that the Hugo lists last few projects in
+						these cards on it's own!
+					</p>
+					<a
+						href=""
+						class="font-no-decoration col-white bg-col-primary text-align-center"
+						>Take me there!</a
+					>
+				</div>
+				*/}}
 			</div>
-			<div class="card">
-				<img src="/src/640x360.png" />
-				<h1 class="title font-20 font-bold">Card Title!</h1>
-				<p class="font-light">
-					This text would be replaced by the text from the corresponding project
-					page! The idea is that the Hugo lists last few projects in these cards
-					on it's own!
-				</p>
-				<a href="" class="font-no-decoration col-white bg-col-primary text-align-center">Take me there!</a>
-			</div>
+			{{ end }}
+			{{ end }}
+
+			{{ block "footer" . }}
+			{{ partial "footer" . }}
+			{{ end }}
 		</div>
-
-		{{ end }}
-
-		{{ block "footer" . }}
-		{{ partial "footer.html" . }}
-		{{ end }}
-	</div>
-</body>
-
+	</body>
 </html>

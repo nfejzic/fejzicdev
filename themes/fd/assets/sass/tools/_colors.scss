@@ -14,8 +14,13 @@ $white-col: #fbf5f3;
 /* charlestone-green black color */
 $charlestone-green: #2e282a;
 $black-col: #2e282a;
+$charlestone-green-lighter: #413b3d;
+$black-col-lighter: #413b3d;
 $charlestone-green-light: #d9d7d8;
 $black-col-light: #d9d7d8;
+/* grey color */
+$sonic-silver: #7a7677;
+$grey-col: #7a7677;
 
 .col-medium-purple,
 .col-primary {
@@ -42,9 +47,19 @@ $black-col-light: #d9d7d8;
 	color: $charlestone-green;
 }
 
+.col-black-light,
+.col-charlestone-green-light {
+	color: $charlestone-green-light;
+}
+
 .col-black-lighter,
 .col-charlestone-green-lighter {
-	color: $charlestone-green-light;
+	color: $charlestone-green-lighter;
+}
+
+.col-grey,
+.col-sonic-silver {
+	color: $sonic-silver;
 }
 
 .bg-col-medium-purple,
@@ -72,7 +87,17 @@ $black-col-light: #d9d7d8;
 	background-color: $charlestone-green;
 }
 
+.bg-col-black-light,
+.bg-col-charlestone-green-light {
+	background-color: $charlestone-green-light;
+}
+
 .bg-col-black-lighter,
 .bg-col-charlestone-green-lighter {
-	background-color: $charlestone-green-light;
+	background-color: $charlestone-green-lighter;
+}
+
+.bg-col-grey,
+.bg-col-sonic-silver {
+	background-color: $sonic-silver;
 }

@@ -1,7 +1,30 @@
-<html>
-	{{ partial "head" . }}
-
-	<body>
-		{{.Content}}
-	</body>
-</html>
+{{ define "content" }}
+<div class="post-wrapper">
+	{{.Content}}
+	<div class="links">
+		{{if .PrevInSection }}
+		<a
+			class="font-16 font-bold font-no-decoration col-white bg-col-primary"
+			href="{{.PrevInSection.RelPermalink}}"
+			><</a
+		>
+		{{ else }}
+		<a class="font-16 font-bold font-no-decoration col-white bg-col-grey"><</a>
+		{{ end }}
+		<a
+			class="font-16 font-bold font-no-decoration col-white bg-col-primary"
+			href="{{.Parent.RelPermalink}}"
+			>Go back</a
+		>
+		{{if .NextInSection }}
+		<a
+			class="font-16 font-bold font-no-decoration col-white bg-col-primary"
+			href="{{.NextInSection.RelPermalink}}"
+			>></a
+		>
+		{{else}}
+		<a class="font-16 font-bold font-no-decoration col-white bg-col-grey">></a>
+		{{ end }}
+	</div>
+</div>
+{{ end }}
