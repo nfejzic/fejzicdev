@@ -38,7 +38,7 @@
 								<a href="{{.RelPermalink}}">{{.Params.postHeading}}</a>
 							</h1>
 							<p class="date">{{.Date.Format "Monday 01 Jan 2006"}}</p>
-							<p>{{truncate 225 .Params.postSummary}}</p>
+							<p>{{truncate 225 " ..." .Params.postSummary}}</p>
 							<a
 								href="{{.RelPermalink}}"
 								class="link font-no-decoration font-bold font-16 col-white bg-col-primary text-align-center"
