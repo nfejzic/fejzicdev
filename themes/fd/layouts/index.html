@@ -1,3 +1,39 @@
-{{/*  {{ define "test" }}
-<p>NO TEST</p>
-{{ end }} */}}
+{{ define "content" }}
+<div class="wrapper">
+    <div class="main-title">
+        <h1 class="font-bold font-24 col-black text-align-center">
+            Welcome to my page!
+        </h1>
+        <p class="col-black font-light text-align-center">
+            Purpose of this page is to showcase my web-dev skills, and also to
+            host my small little Javascript sketches. They will be made using
+            primarily p5.js library. Content of this page, and the page itself
+            is heavily inspired by TheCodingTrain channel, owned by Daniel
+            Shiffman!
+        </p>
+    </div>
+
+    <div class="cards-wrapper">
+        {{ range (first 5 .Pages.ByPublishDate.Reverse) }}
+        {{ if ne .Params.hidden true }}
+        <div class="card">
+            <img src="{{.Params.img}}" />
+            {{/*
+            <h1 class="title font-20 font-bold">{{.Title}}</h1>
+            */}}
+            <div class="text-wrap">
+                <h1>
+                    <a href="{{.RelPermalink}}">{{.Params.postHeading}}</a>
+                </h1>
+                <p class="date">{{.Date.Format "Monday 01 Jan 2006"}}</p>
+                <p>{{truncate 225 " ..." .Params.postSummary}}</p>
+                <a href="{{.RelPermalink}}"
+                    class="link font-no-decoration font-bold font-16 col-white bg-col-primary text-align-center">To the
+                    project!</a>
+            </div>
+        </div>
+        {{ end }}
+        {{ end }}
+    </div>
+</div>
+{{ end }}

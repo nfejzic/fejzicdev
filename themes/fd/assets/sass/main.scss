@@ -1,24 +1,25 @@
 $def-border-radius: 5px;
 $transition-timing: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 
+html,
+body {
+  font-family: "Heebo", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 @import url("https://fonts.googleapis.com/css?family=Heebo");
 @import "tools/media_queries";
 @import "tools/colors";
 @import "tools/typography";
 @import "tools/navigation";
 @import "tools/layout";
-
-html,
-body {
-	font-family: "Heebo", sans-serif;
-	font-size: 16px;
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}

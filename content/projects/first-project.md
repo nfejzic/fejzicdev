@@ -5,6 +5,10 @@ draft: false
 img: /src/640x360.png
 postHeading: First Project!
 postSummary: So, this is another one of those testing things... Let me see how does it work with just a small amount of text.
+scriptFiles:
+  - test
+  - sketch
+loadP5js: true
 ---
 
 # First Project!
@@ -12,5 +16,7 @@ postSummary: So, this is another one of those testing things... Let me see how d
 ![image](/src/640x360.png)
 
 So, this is another one of those testing things... Let me see how does it work with just a small amount of text.
+
+{{< p5canvas >}}
 
 <!--more-->

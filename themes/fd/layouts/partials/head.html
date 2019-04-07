@@ -1,8 +1,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-{{ $styles := resources.Get "/sass/main.scss" | toCSS | minify | fingerprint }}
-<link
-	rel="stylesheet"
-	href="{{ $styles.RelPermalink }}"
-	integrity="{{ $styles.Data.Integrity }}"
-/>
-<title>{{ .Title }}</title>
+{{ $styles := resources.Get "/sass/main.scss" | toCSS }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}"/>
+
+{{/*  Load p5.js javascript library if requested  */}}
+{{ if .Page.Params.loadP5js }}
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"
+  integrity="sha256-gAw6iX1ivbkYgIvRfOXfTEm/w2DZLEB3W6RjSIEydio="
+  crossorigin="anonymous"
+></script>
+{{ end }}
+
+{{/*  Load scripts if script names supplied  */}}
+{{ $pageName := .Title | urlize }}
+{{ $scriptFiles := .Params.scriptFiles }}
+
+{{ range $scriptFiles }}
+{{ $scriptName := . }}
+{{ if gt (len $scriptName) 0 }}
+{{ $scriptPath := (print "/js/" $pageName "/" $scriptName ".js") }}
+{{ $script := resources.Get $scriptPath}}
+<script
+  src="{{ $script.RelPermalink }}"
+  integrity="{{ $script.Data.Integrity }}"
+></script>
+{{ end }}
+{{ end }}
+
+<title>{{ .Page.Title }} | {{ .Site.Title }}</title>

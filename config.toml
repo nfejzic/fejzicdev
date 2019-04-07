@@ -1,6 +1,6 @@
 baseURL = "https://fejzic.dev/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "fejzicdev"
 theme = "fd"
 assetDir = "/themes/fd/assets"
 staticDir = "/themes/fd/assets"

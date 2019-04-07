@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on My New Hugo Site</title>
+    <title>Projects on fejzicdev</title>
     <link>https://fejzic.dev/projects/</link>
-    <description>Recent content in Projects on My New Hugo Site</description>
+    <description>Recent content in Projects on fejzicdev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 05 Apr 2019 12:54:28 +0200</lastBuildDate>
@@ -22,6 +22,9 @@
 &lt;p&gt;&lt;img src=&#34;https://fejzic.dev/src/640x360.png&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;So, this is another one of those testing things&amp;hellip; Let me see how does it work with just a small amount of text.&lt;/p&gt;
+
+&lt;div id=&#34;p5canvas&#34;&gt;&lt;/div&gt;
+
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
