@@ -1,7 +1,7 @@
 ---
 title: "About"
 date: 2019-04-07T21:49:20+02:00
-draft: true
+draft: false
 img:
 hidden: true
 postHeading:

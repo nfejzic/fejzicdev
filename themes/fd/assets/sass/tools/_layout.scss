@@ -51,21 +51,29 @@
   #p5canvas {
     // border: 1px solid blue;
     display: block;
-    border-radius: $def-border-radius;
+    // border-radius: $def-border-radius;
     margin: 1rem auto;
     width: 100%;
     max-width: 640px;
     max-height: 360px;
 
-    overflow: hidden;
+    // overflow: hidden;
   }
 
   a {
     color: $medium-purple;
+
     text-decoration: none;
 
     &:visited {
       color: $medium-purple;
+    }
+  }
+  .button {
+    color: white !important;
+
+    &:visited {
+      color: white !important;
     }
   }
 
@@ -196,9 +204,10 @@
     align-items: flex-start;
     justify-content: space-between;
     padding: 1rem 1rem;
+    padding-top: 0rem;
 
     h1 {
-      margin: 1rem 0rem;
+      margin-bottom: 1rem;
     }
 
     .cards-wrapper {
@@ -207,6 +216,9 @@
       align-items: flex-start;
       justify-content: space-around;
       margin: 0rem auto;
+    }
+    p {
+      margin: 1rem 1rem;
     }
   }
 
@@ -218,7 +230,8 @@
     padding: 1rem 1rem;
 
     h1 {
-      margin: 1rem 0rem;
+      margin: 1rem auto;
+      text-align: center;
     }
 
     img {
@@ -226,12 +239,17 @@
       border-radius: $def-border-radius;
     }
 
+    p {
+      color: $black-col-lighter;
+    }
+
     #p5canvas {
       display: block;
       max-width: 640px;
       max-height: 360px;
       width: 100%;
-      height: auto;
+      // overflow: hidden;
+      // height: fit-content;
     }
 
     .links {
@@ -243,9 +261,6 @@
       margin: 1rem;
 
       a {
-        // all: unset;
-        // border: 1px solid blue;
-        // width: 90%;
         box-shadow: 0px 5px 0px $black-col-light;
         width: auto;
         height: auto;
@@ -253,7 +268,11 @@
         margin: 1rem 0.5rem;
         border-radius: $def-border-radius;
         align-self: center;
+        color: white;
 
+        &:visited {
+          color: white;
+        }
         &:hover {
           box-shadow: none;
           transform: translateY(5px);
