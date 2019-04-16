@@ -1,4 +1,5 @@
 .wrapper {
+  width: 100%;
   max-width: $media_desktop;
   margin: 2rem auto;
   padding: 0rem 2rem;
@@ -51,13 +52,15 @@
   #p5canvas {
     // border: 1px solid blue;
     display: block;
-    // border-radius: $def-border-radius;
+    border-radius: $def-border-radius;
     margin: 1rem auto;
     width: 100%;
-    max-width: 640px;
-    max-height: 360px;
+    max-width: 100%;
+    // max-height: 360px;
 
-    // overflow: hidden;
+    // border: 3px solid green;
+
+    overflow: hidden;
   }
 
   a {
@@ -248,7 +251,11 @@
       max-width: 640px;
       max-height: 360px;
       width: 100%;
-      // overflow: hidden;
+      opacity: 1;
+
+      border-radius: $def-border-radius;
+
+      overflow: hidden;
       // height: fit-content;
     }
 
