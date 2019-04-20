@@ -9,6 +9,7 @@ scriptFiles:
   - test
   - sketch
 loadP5js: true
+index: 2
 ---
 
 # First Project!

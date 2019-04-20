@@ -17,7 +17,10 @@
         {{ range (first 5 .Pages.ByPublishDate.Reverse) }}
         {{ if ne .Params.hidden true }}
         <div class="card">
-            <img src="{{.Params.img}}" />
+            <div class="card-img">
+                <img src="{{.Params.img}}" />
+                <p class="font-bold font-16 col-white-smoke bg-col-negative">#{{ .Params.index }}</p>
+            </div>
             {{/*
             <h1 class="title font-20 font-bold">{{.Title}}</h1>
             */}}

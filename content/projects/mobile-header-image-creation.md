@@ -12,6 +12,7 @@ scriptFiles:
   - point
   - art_line
 loadP5js: true
+index: 3
 ---
 
 # Header Image Creation
