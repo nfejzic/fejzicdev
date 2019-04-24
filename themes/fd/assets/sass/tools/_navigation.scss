@@ -9,11 +9,14 @@
   transition-duration: 300ms;
   transition-timing-function: $transition-timing;
   transition-property: all;
+  -webkit-transition-duration: 300ms;
+  -webkit-transition-timing-function: $transition-timing;
+  -webkit-transition-property: all;
 }
 
 #nav-toggle {
   position: absolute;
-  display: hidden;
+  display: none;
   visibility: hidden;
 }
 
@@ -36,6 +39,8 @@ nav {
     //   visibility: hidden;
     transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
     transition-property: all;
+    -webkit-transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -webkit-transition-property: all;
     margin: 0rem 2rem;
     background-color: unset;
   }
@@ -137,6 +142,9 @@ nav {
       transition-duration: 150ms;
       transition-property: all;
       transition-timing-function: $transition-timing;
+      -webkit-transition-duration: 150ms;
+      -webkit-transition-property: all;
+      -webkit-transition-timing-function: $transition-timing;
       background-color: $medium-purple;
 
       opacity: 0;
@@ -148,11 +156,12 @@ nav {
       }
     }
 
-    @for $i from 1 to 4 {
+    @for $i from 1 to 5 {
       .nav-link:nth-child(#{$i}) {
         $top-offs: $i * 4rem;
         top: $top-offs;
         transition-delay: ($i - 1) * 75ms;
+        -webkit-transition-delay: ($i - 1) * 75ms;
       }
     }
 
@@ -162,10 +171,12 @@ nav {
 
     @at-root #nav-toggle:checked ~ .mobile-backdrop {
       filter: blur(15px);
+      -webkit-filter: blur(15px);
     }
 
     @at-root #nav-toggle ~ .mobile-backdrop {
       filter: blur(0px);
+      -webkit-filter: blur(0px);
     }
   }
 }
