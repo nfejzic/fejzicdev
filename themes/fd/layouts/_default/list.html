@@ -9,7 +9,8 @@
 		{{ if ne .Params.hidden true }}
 		<div class="card">
 			<div class="card-img">
-				<img src="{{.Params.img}}" />
+				{{ $headImg := resources.Get .Params.img }}
+				<img src="{{ $headImg.RelPermalink }}" />
 				<p class="font-bold font-16 col-white-smoke bg-col-negative">#{{ .Params.index }}</p>
 			</div>
 			{{/*

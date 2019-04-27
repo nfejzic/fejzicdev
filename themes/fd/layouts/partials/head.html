@@ -1,18 +1,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-{{/*  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />  */}}
+{{/* <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />  */}}
 <meta charset="UTF-8" />
 
-{{/*  {{ $styles := resources.Get "/sass/main.scss" | toCSS | minify | fingerprint }} */}}
+{{/* {{ $styles := resources.Get "/sass/main.scss" | toCSS | minify | fingerprint }} */}}
 {{ $styles := resources.Get "/sass/main.scss" | toCSS | fingerprint }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
 
-{{/*  Load p5.js javascript library if requested  */}}
+{{/* Load p5.js javascript library if requested  */}}
 {{ if .Page.Params.loadP5js }}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"
   integrity="sha256-gAw6iX1ivbkYgIvRfOXfTEm/w2DZLEB3W6RjSIEydio=" crossorigin="anonymous"></script>
 {{ end }}
 
-{{/*  Load scripts if script names supplied  */}}
+{{/* Load scripts if script names supplied  */}}
 {{ $pageName := .Title | urlize }}
 {{ $scriptFiles := .Params.scriptFiles }}
 

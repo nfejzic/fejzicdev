@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://fejzic.dev/projects/dynamic-poligons/</loc>
+    <lastmod>2019-04-27T15:46:46+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://fejzic.dev/projects/fireworks/</loc>
     <lastmod>2019-04-24T19:48:49+02:00</lastmod>
   </url>
@@ -39,7 +44,7 @@
   
   <url>
     <loc>https://fejzic.dev/projects/</loc>
-    <lastmod>2019-04-24T19:48:49+02:00</lastmod>
+    <lastmod>2019-04-27T15:46:46+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -50,7 +55,7 @@
   
   <url>
     <loc>https://fejzic.dev/</loc>
-    <lastmod>2019-04-24T19:48:49+02:00</lastmod>
+    <lastmod>2019-04-27T15:46:46+02:00</lastmod>
     <priority>0</priority>
   </url>
   

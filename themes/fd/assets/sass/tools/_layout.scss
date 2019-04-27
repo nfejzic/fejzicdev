@@ -312,4 +312,14 @@
       }
     }
   }
+
+  .cards-wrapper {
+    .card {
+      &:hover {
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        box-shadow: 0px 5px 15px $black-col-light;
+      }
+    }
+  }
 }

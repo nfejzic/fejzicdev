@@ -24,9 +24,6 @@ function setup() {
   this.canvas.parent("p5canvas");
 
   parentDiv.style.height = h + "px";
-  // pixelDensity(10.0);
-
-  // pixelDensity(4);
 
   this.firework = new Firework(1, color(255, 0, 0), 50);
   makeFireworks(20);

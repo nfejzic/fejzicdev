@@ -14,17 +14,18 @@
     </div>
 
     <div class="cards-wrapper">
-        {{ range (first 5 .Pages.ByPublishDate.Reverse) }}
+        {{ range first 7 .Pages.ByPublishDate.Reverse }}
         {{ if ne .Params.hidden true }}
         <div class="card">
+            {{ $headImg := resources.Get .Params.img }}
             <div class="card-img">
-                <img src="{{.Params.img}}" />
+                <img src="{{ $headImg.RelPermalink }}" />
                 <p class="font-bold font-16 col-white-smoke bg-col-negative">#{{ .Params.index }}</p>
             </div>
             {{/*
             <h1 class="title font-20 font-bold">{{.Title}}</h1>
             */}}
-            <div class="text-wrap">
+            <div class=" text-wrap">
                 <h1>
                     <a href="{{.RelPermalink}}">{{.Params.postHeading}}</a>
                 </h1>
