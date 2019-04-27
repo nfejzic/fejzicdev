@@ -2,6 +2,24 @@
 {{/* <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />  */}}
 <meta charset="UTF-8" />
 
+<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}">
+
+{{/* Set link preview image - If post his img variable in front matter, use that img, otherwise use generic image!  */}}
+{{ with .Page.Params.img }}
+{{ $img := resources.Get . }}
+<meta property="og:image" content="{{ $img.RelPermalink }}">
+{{ else }}
+{{ $img := resources.Get "/src/header-image.jpg" }}
+<meta property="og:image" content="{{ $img.RelPermalink }}">
+{{ end }}
+
+{{/* Set the description of link using postSummary variable in front matter if available, otherwise use custom description!  */}}
+{{ with .Params.postSummary }}
+<meta property="og:description" content="{{ . }}">
+{{ else }}
+<meta property="og:description"
+  content="Welcome to website made by Nadir Fejzić, made to display html/css/javascript skills of this developer!">
+{{ end }}
 {{/* {{ $styles := resources.Get "/sass/main.scss" | toCSS | minify | fingerprint }} */}}
 {{ $styles := resources.Get "/sass/main.scss" | toCSS | fingerprint }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
